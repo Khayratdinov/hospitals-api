@@ -31,7 +31,7 @@ DJANGO_APPS = [
 
 ]
 
-THIRD_PARTY_APPS =['rest_framework', 'rest_framework_gis',]
+THIRD_PARTY_APPS =['rest_framework', 'rest_framework_gis', 'leaflet']
 
 
 PROJECTY_APPS=['hospitals', 'boundaries']
@@ -113,3 +113,13 @@ STATIC_URL = 'static/'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+LEAFLET_CONFIG = {
+    "DEFAULT_CENTER": (-1.94, 29.87),
+    "DEFAULT_ZOOM": 8,
+    "MAX_ZOOM": 20,
+    "MIN_ZOOM": 3,
+    "SCALE": "both",
+    "ATTRIBUTION_PREFIX": "API-Imperfect Hospitals API",
+}
